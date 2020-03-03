@@ -5,3 +5,8 @@ sources:
     database: raw
     tables:
       - name: payment
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
